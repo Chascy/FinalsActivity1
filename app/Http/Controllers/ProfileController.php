@@ -10,7 +10,7 @@ class ProfileController extends Controller
 {
     public function showUser(){
         $profiles = Profile::all();
-        $courses = Course::all();// para lang makita agad kung gamagana ung many to many sa user
+        $courses = Course::all();
         return view('users', compact('profiles', 'courses'));
     }
 }
